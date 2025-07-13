@@ -1,0 +1,80 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e} % For \RaggedRight
+\usepackage{titlesec} % For custom section titles
+\usepackage{enumitem} % For custom list environments
+\usepackage{hyperref} % For links
+\usepackage{xcolor} % For colors
+\usepackage{fontawesome5} % For icons
+
+% Margins
+\usepackage[left=0.75in, right=0.75in, top=0.75in, bottom=0.75in]{geometry}
+
+% Set hyperlink colors for a professional look
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=black,
+}
+
+% --- Custom commands and formatting ---
+% Section titles: bold, large, uppercase, followed by a rule
+\titleformat{\section}{\vspace{-4pt}\normalfont\Large\bfseries\color{black}}{}{0em}{\MakeUppercase}[\vspace{-2pt}\rule{\linewidth}{0.8pt}]
+\titlespacing{\section}{0pt}{10pt}{0pt} % Spacing for section titles
+
+% Itemize environment for compact lists
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=2pt, partopsep=0pt, parsep=0pt}
+
+\pagestyle{empty} % No page numbers
+
+\begin{document}
+
+% --- Contact Information ---
+\begin{center}
+    \textbf{\Huge John Doe} \\
+    \vspace{2pt}
+    \normalsize City, State \quad \textperiodcentered \quad (XXX) XXX-XXXX \quad \textperiodcentered \quad \href{mailto:your.email@example.com}{your.email@example.com} \quad \textperiodcentered \quad \href{https://linkedin.com/in/yourprofile}{\faLinkedinSquare \ linkedin.com/in/yourprofile}
+\end{center}
+\vspace{-10pt} % Adjust spacing after contact info
+
+% --- Professional Summary ---
+\section*{Professional Summary}
+Software Engineer with a strong academic background (GPA: 3.8) and practical experience in developing scalable web applications. Proficient in a wide range of modern technologies including Python, JavaScript, React, Node.js, and AWS. Adept at designing high-performance systems and resolving complex technical issues, with a proven ability to deliver robust software solutions. Seeking to leverage strong problem-solving skills and full-stack development expertise to contribute to innovative projects and drive technological advancements.
+\vspace{-5pt} % Adjust spacing as needed
+
+% --- Experience ---
+\section*{Experience}
+\textbf{Tech Company} \hfill City, State \\
+Software Engineer \hfill Jun 2023 – Present
+\begin{itemize}
+    \item Engineered and maintained scalable web applications using React.js and Node.js, enhancing user engagement and reducing page load times by 15\%.
+    \item Designed and implemented high-performance backend APIs with Node.js and PostgreSQL, successfully supporting over \textbf{10,000 concurrent users} with minimal latency.
+    \item Collaborated effectively with cross-functional teams following Agile/Scrum methodologies, contributing to the on-time delivery of 5+ major software releases.
+    \item Identified and resolved complex technical issues within distributed systems, improving overall system performance and stability by 20\%.
+\end{itemize}
+\vspace{-5pt} % Adjust spacing as needed
+
+% --- Education ---
+\section*{Education}
+\textbf{University Name} \hfill City, State \\
+Bachelor of Science in Computer Science; GPA: 3.8 \hfill Aug 2019 – May 2023
+\vspace{-5pt} % Adjust spacing as needed
+
+% --- Projects ---
+\section*{Projects}
+\begin{itemize}
+    \item \textbf{Portfolio Website:} Engineered a responsive front-end portfolio using React.js and custom CSS, attracting 500+ unique visitors within the first month to showcase personal projects.
+    \item \textbf{Task Management App:} Developed a full-stack task management application using the MERN (MongoDB, Express.js, React.js, Node.js) stack, featuring secure user authentication via JWT and comprehensive CRUD functionalities.
+\end{itemize}
+\vspace{-5pt} % Adjust spacing as needed
+
+% --- Skills ---
+\section*{Skills}
+\begin{itemize}
+    \item \textbf{Languages:} Python, JavaScript, Java, C++
+    \item \textbf{Technologies:} MongoDB, React, Node.js, AWS, PostgreSQL, Git, CI/CD
+    \item \textbf{Methodologies:} DevOps, Scrum, Agile
+\end{itemize}
+
+\end{document}
