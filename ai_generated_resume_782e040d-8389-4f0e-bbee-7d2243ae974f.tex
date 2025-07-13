@@ -1,0 +1,142 @@
+\documentclass[10pt, letterpaper]{article}
+
+% --- PACKAGES ---
+\usepackage[left=0.75in, right=0.75in, top=0.6in, bottom=0.6in]{geometry} % Set margins
+\usepackage{helvet} % Use Helvetica font
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{titlesec} % For custom section titles
+\usepackage{enumitem} % For custom lists
+\usepackage{hyperref} % For clickable links
+\usepackage{tabularx} % For skills section table
+
+% --- FORMATTING ---
+\pagestyle{empty} % No page numbers
+
+% Define colors
+\usepackage{xcolor}
+\definecolor{linkcolor}{HTML}{0000EE} % A standard blue for links
+\definecolor{gray}{HTML}{4D4D4D} % Dark gray for subheadings
+
+% Setup hyperlink appearance
+\hypersetup{
+    colorlinks=true,
+    urlcolor=linkcolor,
+    linkcolor=linkcolor,
+    pdftitle={John Doe Resume},
+    pdfauthor={John Doe},
+}
+
+% Format section titles (e.g., EXPERIENCE)
+\titleformat{\section}
+  {\bfseries\scshape\raggedright\large} % Bold, small caps, large font
+  {}{0em}{} % No label
+  [\titlerule] % Horizontal line below title
+\titlespacing{\section}{0pt}{1.5ex}{1ex} % Spacing around section title
+
+% --- CUSTOM COMMANDS ---
+% For a professional looking heading for each entry (e.g., job, education)
+\newcommand{\resumeheading}[4]{
+  \vspace{2pt}
+  \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      \textit{\color{gray}#3} & \textit{\color{gray}#4} \\
+    \end{tabular*}
+  \vspace{-8pt} % Reduce space after heading
+}
+
+% For a project heading
+\newcommand{\projectheading}[2]{
+  \vspace{2pt}
+  \item
+    \textbf{#1} \\
+    \textit{\color{gray}#2}
+  \vspace{-8pt}
+}
+
+% For bullet points within an entry
+\newcommand{\resumebullet}[1]{\item\small{#1}}
+
+% Define environments for lists
+\newlist{resumelist}{itemize}{1}
+\setlist[resumelist]{leftmargin=*, nosep, label={}}
+\newlist{bulletlist}{itemize}{1}
+\setlist[bulletlist]{leftmargin=0.5cm, nosep, label=\textbullet}
+
+
+% --- DOCUMENT START ---
+\begin{document}
+
+% --- HEADER ---
+\begin{center}
+    {\Huge\bfseries John Doe} \\ \vspace{4pt}
+    \small
+    City, State \textbullet\
+    (123) 456-7890 \textbullet\
+    \href{mailto:john.doe@email.com}{john.doe@email.com} \textbullet\
+    \href{https://www.linkedin.com/in/johndoe}{linkedin.com/in/johndoe} \textbullet\
+    \href{https://github.com/johndoe}{github.com/johndoe}
+\end{center}
+
+% --- SUMMARY ---
+\section{Summary}
+\vspace{2pt}
+\small{Detail-oriented Software Engineer with 1+ years of experience in designing, developing, and deploying scalable web applications. Proficient in full-stack development with a strong focus on backend systems using Python, JavaScript, and cloud technologies like AWS. Proven ability to collaborate effectively in Agile teams to deliver high-quality software solutions and optimize system performance.}
+
+% --- EXPERIENCE ---
+\section{Experience}
+\begin{resumelist}
+    \resumeheading
+      {Tech Company}{City, State}
+      {Software Engineer}{June 2023 -- Present}
+    \begin{bulletlist}
+        \resumebullet{Engineered and maintained scalable backend services on AWS, successfully handling traffic spikes of over 10,000 concurrent users through efficient load balancing and resource management.}
+        \resumebullet{Developed and launched three major features for a customer-facing web application using React, Node.js, and PostgreSQL, leading to a 15\% improvement in user engagement metrics.}
+        \resumebullet{Optimized critical API endpoints by refactoring database queries and implementing caching strategies, reducing average response time by 40\% and enhancing user experience.}
+        \resumebullet{Collaborated in an Agile/Scrum environment, participating in daily stand-ups, sprint planning, and retrospectives to deliver features within CI/CD pipelines, shortening release cycles by 25\%.}
+    \end{bulletlist}
+\end{resumelist}
+
+% --- PROJECTS ---
+\section{Projects}
+\begin{resumelist}
+    \projectheading
+      {Task Management Application}
+      {Technologies: React, Node.js, Express, MongoDB, JSON Web Tokens (JWT)}
+    \begin{bulletlist}
+        \resumebullet{Developed a full-stack MERN application enabling users to create, track, and manage tasks, featuring secure user authentication and authorization using JWT.}
+        \resumebullet{Designed and implemented a RESTful API with Express.js for seamless data interaction between the front-end and a NoSQL (MongoDB) database.}
+    \end{bulletlist}
+    \vspace{6pt} % Space between projects
+    \projectheading
+      {Responsive Portfolio Website}
+      {Technologies: React, JavaScript (ES6+), HTML5, CSS3, Netlify}
+    \begin{bulletlist}
+        \resumebullet{Built and deployed a fully responsive personal portfolio from scratch using React to effectively showcase technical projects, skills, and professional experience.}
+        \resumebullet{Implemented modern UI/UX design principles to ensure an intuitive and engaging user experience across all devices, including desktops, tablets, and mobile.}
+    \end{bulletlist}
+\end{resumelist}
+
+% --- EDUCATION ---
+\section{Education}
+\begin{resumelist}
+    \resumeheading
+      {University Name}{City, State}
+      {Bachelor of Science in Computer Science}{Aug 2019 -- May 2023}
+    \begin{bulletlist}
+        \resumebullet{Cumulative GPA: 3.8 / 4.0}
+    \end{bulletlist}
+\end{resumelist}
+
+% --- SKILLS ---
+\section{Skills}
+\vspace{4pt}
+\begin{tabularx}{\textwidth}{@{} l X @{}}
+    \textbf{Languages:} & Python, JavaScript, Java, C++, SQL \\
+    \textbf{Technologies:} & React, Node.js, AWS, MongoDB, PostgreSQL, Git, Docker, CI/CD, REST APIs \\
+    \textbf{Methodologies:} & Agile, Scrum, DevOps, Test-Driven Development (TDD) \\
+\end{tabularx}
+
+\end{document}
