@@ -1,0 +1,179 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://arkarn.github.io/}{\Large Ashish Ranjan Karn}} & Email: \href{mailto:ark.iitkgp@gmail.com}{ark.iitkgp@gmail.com}\\
+  \href{https://arkarn.github.io/}{arkarn.github.io} & Mobile: \href{tel:+6588893094}{+65 88893094} \\
+\end{tabular*}
+
+%-----------SUMMARY-----------------
+\section{Summary}
+\small{
+Highly accomplished Lead Data Scientist with 7+ years of experience specializing in advanced Machine Learning, Generative AI, and MLOps. Proven track record of delivering impactful data-driven solutions, including developing cutting-edge GenAI applications, optimizing complex operations (e.g., 6.2\% oil production increase), and enhancing user experiences for over 11,000 visually impaired users. Adept at leading complex projects, building scalable systems, and driving significant business outcomes through innovation and technical excellence.
+}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Grab Holdings Inc.}{Singapore}
+      {Lead Data Scientist, Business \& Transactions Platform Team}{Oct 2019 -- Present}
+      \resumeItemListStart
+        \resumeItem{}
+          {Developed Merchant AI Chatbot with agent capabilities and SSE streaming. Integrated chat insights pipeline for analytics, RAG pipeline and MCP Toolstore that enables cross-team tool hosting to enhance agent capabilities.}
+        \resumeItem{}
+          {Developed Central Recommendation System using Multi-Armed Bandit models for contextual recommendations used by Merchant AI Chatbot. Built competitor benchmarking and rating-based models for dynamic optimization.}
+        \resumeItem{}
+          {Developed Accessibility bot for 11,000+ visually impaired users in South-East Asia, enabling voice interaction (OpenAI STT \& TTS) with the Grab app; to drive adoption and support company-wide ESG efforts.}
+        \resumeItem{}
+          {Built internal tool for Product Managers using multi-agent framework (CrewAI, LangGraph) for PRD generation; integrated company knowledge base (RAG) and Web based deep research, automated JIRA creation and slide deck.}
+        \resumeItem{}
+          {Developed high-precision (88\%) classification model for Large Order prediction; used LLM/GPT to estimate item attributes from names, descriptions \& prices, reducing cancellations and improving driver allocation.}
+        \resumeItem{}
+          {Demand forecasting for Grab Mart items: Accurate forecasting of item sales helped operations team in efficient procurement especially at times of promos/offers rollout; achieved WMAPE = 33\% over 100k fast-selling items.}
+        \resumeItem{}
+          {Led food delivery ETA/Food prep time prediction framework; helped to improve total ETA prediction accuracy from 72\% to 81\% by implementing Batching buffer model using real-time driver supply demand characteristics; improved Food Preparation time (FPT) prediction from 62\% to 77\% that helped enable Just-In-Time allocation.}
+        \resumeItem{Tech stack}
+          {Python, PySpark, SQL, Airflow, AWS, MLFlow, Kubernetes, GenAI (LLMs, LangChain, CrewAI).}
+      \resumeItemListEnd
+    \resumeSubheading
+      {SAP Labs Pvt. Ltd.}{Bangalore, India}
+      {Data Scientist, Innovative Business Solutions (IBSo)}{July 2017 -- Sept 2019}
+      \resumeItemListStart
+        \resumeItem{}
+          {Developed \& patented a custom optimization algorithm for oil well rig scheduling, increasing oil production by 6.2\%.}
+        \resumeItem{}
+          {Built a time-series forecasting API for retail inventory, achieving 8\% MAPE using XGBoost/ARIMA.}
+        \resumeItem{}
+          {Developed an image classification model for online fashion store client; multi-label classification belonging to 350 classes and a million sample input; fine tuned CNN with 16 layers to achieve hamming score of 65\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology (IIT) Kharagpur}{Kharagpur, India}
+      {Master’s \& Bachelor’s in Electrical Engineering (Signal Processing); CGPA: 8.54/10}{July 2012 -- May 2017}
+    \resumeSubheading
+      {Delhi Public School RK Puram}{Delhi, India}
+      {Senior Secondary (CBSE); Marks: 93\%}{July 2010 -- May 2012}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Entrepreneurial Endeavors \& Side Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Ringer AI}
+      {AI-Powered Voice Agents for Customer Service}
+    \resumeSubItem{DataSquare.in (dormant startup)}
+      {Teach, Mentor \& Sell online courses on ML/AI/Analytics domain}
+    \resumeSubItem{Other Side Projects}
+      {QnA Bot, Drowsiness Detector, Audio-to-Image etc., ncert.fun}
+  \resumeSubHeadingListEnd
+
+%-----------PATENTS-----------------
+\section{Patents}
+  \resumeSubHeadingListStart
+    \resumeSubItem{US20210095559A1}
+      {Workover rig scheduling to maximize oil production for onshore oil fields}
+    \resumeSubItem{WO2022245295A2}
+      {System and method for predicting delivery time for batch orders}
+    \resumeSubItem{WO2024005708A1}
+      {Service request estimated time generation system and method}
+    \resumeSubItem{WO2023091078A1}
+      {Dynamic Padding Buffer Time Optimisation for Food ETA Prediction}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{Technical Skills \& Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages/Platforms}
+      {Python, SQL, C++, Golang, MATLAB, AWS services, Azure services, SAP Cloud Platform}
+    \resumeSubItem{Frameworks \& Packages}
+      {Langchain, MultiAgent (CrewAI/LangGraph), Spark, Airflow, TensorFlow, MLFlow}
+    \resumeSubItem{Knowledge Areas}
+      {AI (LLMs, RAG), Machine Learning, Statistics, Deep Learning, Time-series forecasting}
+    \resumeSubItem{Certifications}
+      {AWS Certified Machine Learning Specialty (MLS-C01), Microsoft Certified Azure Data Scientist (DP-100), Neural Networks and Deep Learning by deeplearning.ai}
+  \resumeSubHeadingListEnd
+
+\end{document}
