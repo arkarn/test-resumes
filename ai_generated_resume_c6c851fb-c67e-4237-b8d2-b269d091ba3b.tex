@@ -1,0 +1,194 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{#}{\Large Nitin Chaurasia}} & Email: \href{mailto:nitoncbr@gmail.com}{nitoncbr@gmail.com}\\
+  Product Manager | CX | Trust \& Safety | Insurance & Mobile: \href{tel:+918896612173}{+91 8896612173} \\
+\end{tabular*}
+
+%-----------PROFESSIONAL SUMMARY-----------------
+\section{Professional Summary}
+\small{Experienced professional with 15 years in insurance, specializing in Trust \& Safety, digital transformation, customer experience, business process improvements, and digital product management. Achieved a 20\% reduction in claims processing time and led the launch of a paperless insurance application, driving 100\% agent adoption within 7 months.}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Senior Consultant (Insurance Claims)}{}
+      {RiskInsight Consulting}{November 2023 -- Present}
+      \resumeItemListStart
+        \item\small{Driving claims process optimization by collaborating with engineering teams and stakeholders to design, execute, and implement innovative solutions, resulting in streamlined operations and enhanced efficiency across claims functions for Singapore-based Insurance clients.}
+        \item\small{Streamlined claims processing through value stream mapping and workflow reengineering, achieving a 20\% reduction in processing time and increasing daily throughput by 30\%.}
+        \item\small{Developed and presented business cases for new process improvement initiatives, securing more than \$300K in funding and driving operational improvements and cost efficiencies.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Product Consultant (Part-Time)}{}
+      {Trustlab}{December 2023 -- Present (Concurrent)}
+      \resumeItemListStart
+        \item\small{Conducted in-depth discovery into harmful behaviors, uncovering fraud patterns and identifying bad actors for Airbnb.}
+        \item\small{Conducted red teaming exercises for Airbnb by simulating adversarial scenarios to identify vulnerabilities in identity verification, payment fraud, listing integrity, and fake reviews. Delivered actionable recommendations to the Airbnb product team to address gaps.}
+        \item\small{Designed 400+ prompts to detect harmful responses from LinkedIn's LLM, addressing biases, misinformation, sensitive topics, and policy violations. Delivered actionable insights to the LinkedIn AI Product team to enhance system integrity and compliance.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Manager (Strategy and Customer Experience)}{Singapore}
+      {KPMG}{August 2022 -- November 2023}
+      \resumeItemListStart
+        \item\small{Facilitated 54 discovery workshops with 15+ stakeholders to identify customer pain points and map touchpoints across purchase, servicing, and claims journeys. Developed actionable recommendations to improve efficiency and reduce operating costs for Singapore-based insurance clients.}
+        \item\small{Revamped claims processes for a Singapore-based insurance client, resolving high-priority inefficiencies and achieving daily case handling capacity by 30\%.}
+        \item\small{Managed a 9-member Data Transformation team for three IFRS17 finance/data transformations for insurance clients in Brunei, Indonesia, and Malaysia. Defined target data, systems, and processes to achieve regulatory compliant financial reporting.}
+        \item\small{Developed RFPs for diverse banking and insurance client needs, collaborating with partners and directors. Managed a team of 9 (2 AMs, 7 Senior Associates) to align project goals and secured contracts with 3 major clients in Singapore and Taiwan.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Product Manager}{Singapore}
+      {Singlife-Aviva}{May 2014 -- August 2022}
+      \resumeItemListStart
+        \item\small{Led the 0-to-1 development of the "Blue" insurance platform's digital onboarding journey, delivering a seamless user experience that attracted 500+ completed applications per month post-launch.}
+        \item\small{Led a project to improve customer service by identifying pain points through workshops and mapping various complex manual processes. Developed business use cases and secured \$400K buy-in from stakeholders.}
+        \item\small{Product owner of 0-to-1 development and launch of the "Ez-Sub" paperless insurance application, driving 100\% agent adoption within 7 months and reducing customer purchase turnaround time from 7 days to just 1 day.}
+        \item\small{Managed the 0-to-1 journey of Singlife Document Centre portal to provide seamless access to policy documents for over 1M customer accounts.}
+        \item\small{Collaborated with cross-functional teams, including engineering and design, to create user flows, wireframes, and prototypes, ensuring seamless user experiences.}
+        \item\small{Managed legacy modernization projects, leveraging scalable Cloud SaaS solutions to achieve a 33\% reduction in product launch time and a 30\% decrease in expenses.}
+        \item\small{Worked on a data migration project, defined the to-be state, data profiling, and created data dictionaries to migrate more than 100K policies from a legacy application to a new source system.}
+        \item\small{Partnered with external vendors to evaluate and integrate advanced technologies through Proof of Concept exercises, ensuring scalability and alignment with strategic goals.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Singapore}
+      {Mindteck (Maybank)}{January 2013 -- April 2014}
+      \resumeItemListStart
+        \item\small{Subject Matter Expert for replatforming legacy credit card applications.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Consultant}{Brunei}
+      {Picmond (Baiduri Bank)}{May 2012 -- December 2013}
+      \resumeItemListStart
+        \item\small{Streamlined business processes, reporting, and customer engagement strategies.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{India}
+      {Attra InfoTech}{December 2009 -- April 2012}
+      \resumeItemListStart
+        \item\small{Customized solutions for over 50 banks in the Middle East and North Africa, focusing on card processors.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{Skills}
+  \resumeItemListStart
+    \resumeItem{Tools}{Confluence, JIRA, Quadient, Miro, Notion.}
+    \resumeItem{Language}{Python, SQL.}
+    \resumeItem{Data Science}{LLMs, GEN AI, Statistics, Product Analytics, Data Analytics.}
+    \resumeItem{Cloud Services \& Architecture}{Proficient in cloud computing concepts including PaaS, SaaS models; experience with cloud platforms like AWS, Azure, and GCP; understanding of cloud-native architectures, microservices.}
+    \resumeItem{Data Analytics}{Tableau, Power BI, Excel, Alteryx.}
+    \resumeItem{Software Development Methodologies}{Agile, Waterfall.}
+    \resumeItem{Project \& Product Management}{PRD, Product Roadmap \& backlog, User Stories, Business process mapping, Gap Analysis, Vendor \& Change management, Market Research, Process Improvements.}
+  \resumeItemListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {International Institute of Information Technology}{Bangalore, India}
+      {Post Graduate diploma in Data Science}{2022}
+    \resumeSubheading
+      {SRMSCET}{India}
+      {Master of Computer Application}{2009}
+    \resumeSubheading
+      {Lucknow University}{India}
+      {Bachelor of Science}{2006}
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------------
+\section{Certifications}
+  \resumeItemListStart
+    \item\small{Scrum.org – Professional Scrum Master – I.}
+    \item\small{API Academy Certification- API Product Manager.}
+    \item\small{UpGrad \& MindtheProduct – Product Management.}
+    \item\small{MindtheProduct- Product Analytics.}
+  \resumeItemListEnd
+
+\end{document}
